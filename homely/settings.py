@@ -56,6 +56,14 @@ INSTALLED_APPS = [
     'home_app',
     'api_app',
 
+    # django-guardian
+    'guardian',
+
+    # django-axes
+    'axes',
+
+
+
 ]
 
 MIDDLEWARE = [
@@ -148,4 +156,7 @@ AUTHENTICATION_BACKENDS = (
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
+
+    # django-guardian
+    'guardian.backends.ObjectPermissionBackend',
 )
