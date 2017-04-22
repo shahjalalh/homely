@@ -27,5 +27,5 @@ urlpatterns = [
 
     # Django REST framework urls
     # Browsable API you'll probably also want to add REST framework's login and logout views
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

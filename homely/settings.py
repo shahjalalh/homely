@@ -50,21 +50,23 @@ INSTALLED_APPS = [
     # 'allauth.socialaccount.providers.twitter',
 
     # rest_framework
-    'rest_framework',
+    # 'rest_framework',
 
     # apps
     'home_app',
     'api_app',
 
     # django-guardian
-    'guardian',
+    # 'guardian',
 
     # django-axes
-    'axes',
+    # 'axes',
 
 
 
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -158,5 +160,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 
     # django-guardian
-    'guardian.backends.ObjectPermissionBackend',
+    # 'guardian.backends.ObjectPermissionBackend',
 )
+
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
