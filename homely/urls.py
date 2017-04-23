@@ -20,7 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     # app urls
-    url(r'^home/', include('home_app.urls'), name='home'),
+    url(r'^', include('home_app.urls'), name='home'),
 
     # django-allauth urls
     url(r'^accounts/', include('allauth.urls')),
